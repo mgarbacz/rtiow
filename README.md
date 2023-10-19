@@ -15,6 +15,6 @@ cd build
 
 ### 2.2
 ```sh
-main > image.ppm
+./main > image.ppm
 open image.ppm
 ```
