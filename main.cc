@@ -24,5 +24,6 @@ int main() {
     }
   }
 
+  // 17 spaces to overwrite "ines remaining: 1"
   std::clog << "\rDone.                 \n";
 }
