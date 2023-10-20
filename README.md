@@ -11,10 +11,6 @@ cmake --build build
 ## Running examples
 ```sh
 cd build
-```
-
-### 2.2
-```sh
 ./main > image.ppm
 open image.ppm
 ```
