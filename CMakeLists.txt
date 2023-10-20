@@ -9,4 +9,4 @@ set ( CMAKE_CXX_STANDARD          11 )
 set ( CMAKE_CXX_STANDARD_REQUIRED ON )
 set ( CMAKE_CXX_EXTENSIONS        OFF )
 
-add_executable(main main.cc)
+add_executable(main src/main.cc)
