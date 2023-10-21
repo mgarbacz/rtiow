@@ -1,12 +1,14 @@
 #include "color.h"
 #include "hittable.h"
 #include "hittable_list.h"
+#include "interval.h"
 #include "math_utils.h"
 #include "ray.h"
 #include "sphere.h"
 #include "vec3.h"
 
 #include <iostream>
+#include <memory>
 
 color ray_color(const ray& r, const hittable& world) {
   hit_record rec;
@@ -30,14 +32,14 @@ int main() {
 
   // World //
   hittable_list world;
-  world.add(make_shared<sphere>(point3(0, 0, -1), 0.5));
-  world.add(make_shared<sphere>(point3(0, -100.5, -1), 100));
+  world.add(std::make_shared<sphere>(point3(0, 0, -1), 0.5));
+  world.add(std::make_shared<sphere>(point3(0, -100.5, -1), 100));
 
   // Camera //
   auto focal_length = 1.0;
   auto viewport_height = 2.0;
   auto viewport_width =
-    viewport_height * (static_cast<double>(image_width)/image_height);
+    viewport_height * (static_cast<double>(image_width) / image_height);
   auto camera_center = point3(0, 0, 0);
 
   // Calculate vectors across horizontal and down vertical viewport edges
