@@ -13,3 +13,6 @@ _deps
 
 # Build
 build/
+
+# VSCode
+.vscode
