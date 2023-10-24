@@ -14,3 +14,9 @@ cmake --build build
 ./build/main > build/image.ppm
 open build/image.ppm
 ```
+
+## Extra Resources & Further Reading
+
+- [Google C++ Styleguide](https://google.github.io/styleguide/cppguide.html)
+- [Google protobuf source code](https://github.com/protocolbuffers/protobuf/tree/main/src/google/protobuf) (to examine application of the style guide)
+- [Nvidia RTIOW in CUDA](https://developer.nvidia.com/blog/accelerated-ray-tracing-cuda/)
